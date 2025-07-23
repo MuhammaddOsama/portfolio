@@ -68,13 +68,13 @@ export const SERVICES_DATA = [
 export const PROJECTS_DATA = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "Portfolio Website",
     description:
       "A React portfolio highlighting skills, projects, and experience with a dynamic design.",
     image: "/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "http://osamacodes-r93u9u0a0-muhammaddosamas-projects.vercel.app",
   },
   {
     id: 2,
