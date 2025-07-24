@@ -38,7 +38,9 @@ const Hero = () => {
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a
-          href=""
+          href="mailto:muhammadosamabangash@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-10 py-3 rounded-full border border-white bg-[#1f1f1f] text-white flex items-center gap-2"
         >
           Contact Me

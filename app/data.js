@@ -47,14 +47,14 @@ export const SERVICES_DATA = [
     title: "Responsive Design",
     description:
       "Creating modern, mobile-friendly, and responsive websites with pixel-perfect UI and smooth layouts.",
-     Icon: DevicePhoneMobileIcon,
+    Icon: DevicePhoneMobileIcon,
   },
   {
     id: 2,
     title: "Interactive Applications",
     description:
       "Component-driven SPA / SSR builds with state management, routing, forms, and animations.",
-     Icon: CursorArrowRaysIcon,
+    Icon: CursorArrowRaysIcon,
   },
   {
     id: 3,
@@ -71,40 +71,42 @@ export const PROJECTS_DATA = [
     title: "Portfolio Website",
     description:
       "A React portfolio highlighting skills, projects, and experience with a dynamic design.",
-    image: "/1.png",
+    image: "/1.jpeg",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "http://osamacodes-r93u9u0a0-muhammaddosamas-projects.vercel.app",
+    previewUrl:
+      "http://osamacodes-r93u9u0a0-muhammaddosamas-projects.vercel.app",
   },
   {
     id: 2,
-    title: "E-Commerce Website",
+    title: "Food Restaurant Website",
     description:
-      "An online store that allows users to browse, buy, and securely manage products or services.",
-    image: "/2.png",
+      "An online food store that allows users to browse, buy, and securely manage recipes or foods.",
+    image: "/2.jpeg",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl:
+      "https://foodieland-f74ptfy24-muhammaddosamas-projects.vercel.app",
   },
   {
     id: 3,
-    title: "Admin Dashboard Application",
+    title: "Redux Learning with Todo list",
     description:
-      "A control panel that provides insights, management tools, and analytics to oversee and optimize a system or application.",
+      "A simple Todo List app built to learn Redux for state management, with tasks stored in local storage to persist data across sessions.",
     image: "/3.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Mini"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "redux-learning-p33edn1vb-muhammaddosamas-projects.vercel.app",
   },
   {
     id: 4,
-    title: "Food Website",
+    title: "E-Commerce Website",
     description:
       "An online platform for publishing and sharing articles, insights, and stories on various topics.",
     image: "/4.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "https://foodieland-f74ptfy24-muhammaddosamas-projects.vercel.app",
+    previewUrl: "/",
   },
   {
     id: 5,
@@ -112,18 +114,18 @@ export const PROJECTS_DATA = [
     description:
       "A weather app that provides real-time forecasts, temperature, and climate details for various locations.",
     image: "/5.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Mini"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Social Media Website",
+    title: "Sage buddy Website",
     description:
-      "A social media platform that enables users to connect, share, and interact through posts, messages, and multimedia content.",
+      "Sage Buddy is a smart business growth companion that helps streamline operations, boost productivity, and support decision-making with ease.",
     image: "/6.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "sage-buddy-5b531gy31-muhammaddosamas-projects.vercel.app",
   },
 ];

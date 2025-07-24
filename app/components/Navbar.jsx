@@ -7,10 +7,14 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="w-full fixed top-0 left-0 px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-start space-x-5 z-50 bg-[#1f1f1f]">
-      <div className="text-white font-bold text-2xl tracking-wide cursor-pointer">
-        Muhammad <span className="text-[#00adb5]">Osama</span>
-      </div>
+    <nav className="w-full fixed top-0 left-0 px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between space-x-5 z-50 bg-[#1f1f1f]">
+      <a
+        href="#top"
+        className="font-extrabold text-xl sm:text-2xl tracking-tight cursor-pointer bg-gradient-to-r from-[#00adb5] via-white to-[#00adb5] text-transparent bg-clip-text drop-shadow-sm"
+      >
+        Muhammad Osama
+      </a>
+
       <ul className="hidden md:flex items-center gap-6 lg:gap-8   px-12 py-3 shadow-sm ">
         {navLinks.map(({ href, label }) => (
           <li key={href}>
