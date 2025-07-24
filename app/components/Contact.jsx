@@ -20,7 +20,7 @@ const Contact = () => {
             impactful and inspiring!
           </p>
           <div className="flex gap-4">
-            <Link href="https://github.com/">
+            <Link href="https://github.com/MuhammaddOsama">
               <Image
                 src={github}
                 alt="github icon"
@@ -29,7 +29,7 @@ const Contact = () => {
                 className="hover:scale-110 transition-transform duration-300 cursor-pointer"
               />
             </Link>
-            <Link href="https://linkedin.com/">
+            <Link href="https://www.linkedin.com/in/m-osama-dev">
               <Image
                 src={Linkedin}
                 alt="Linkedin icon"

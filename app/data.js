@@ -75,7 +75,7 @@ export const PROJECTS_DATA = [
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl:
-      "http://osamacodes-r93u9u0a0-muhammaddosamas-projects.vercel.app",
+      "http://osamacodescom.vercel.app",
   },
   {
     id: 2,
@@ -86,7 +86,7 @@ export const PROJECTS_DATA = [
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl:
-      "https://foodieland-f74ptfy24-muhammaddosamas-projects.vercel.app",
+      "https://foodieland-liart.vercel.app",
   },
   {
     id: 3,
@@ -96,7 +96,7 @@ export const PROJECTS_DATA = [
     image: "/3.png",
     tag: ["All", "Mini"],
     gitUrl: "/",
-    previewUrl: "redux-learning-p33edn1vb-muhammaddosamas-projects.vercel.app",
+    previewUrl: "http://redux-learning-lac.vercel.app",
   },
   {
     id: 4,
@@ -126,6 +126,6 @@ export const PROJECTS_DATA = [
     image: "/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "sage-buddy-5b531gy31-muhammaddosamas-projects.vercel.app",
+    previewUrl: "http://foodieland-liart.vercel.app",
   },
 ];
