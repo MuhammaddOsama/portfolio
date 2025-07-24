@@ -126,6 +126,6 @@ export const PROJECTS_DATA = [
     image: "/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "http://foodieland-liart.vercel.app",
+    previewUrl: "http://sage-buddy.vercel.app",
   },
 ];
