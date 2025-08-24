@@ -110,9 +110,9 @@ export const PROJECTS_DATA = [
   },
   {
     id: 5,
-    title: "Weather Application",
+    title: "Weather Website",
     description:
-      "A weather app that provides real-time forecasts, temperature, and climate details for various locations.",
+      "A weather website that provides real-time forecasts, temperature, and climate details for various locations.",
     image: "/5.png",
     tag: ["All", "Mini"],
     gitUrl: "/",

@@ -18,65 +18,81 @@ const Project = () => {
   const filteredProjects = PROJECTS_DATA.filter((project) =>
     project.tag.includes(tag)
   );
+
   return (
-    <section id="projects" className="container mt-10 mx-auto px-12 py-4">
-      <h2 className="text-center text-4xl font-bold text-white mt-6 mb-8 md:mb-12 ">
+    <section id="projects" className="w-full px-[12%] py-16 scroll-mt-20">
+      <h2 className="text-center text-4xl font-bold text-gray-800 mt-6 mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 ">
+
+      {/* Filter buttons */}
+      <div className="flex flex-row justify-center items-center gap-4 py-6">
         {["All", "Web", "Mini"].map((tagName) => (
           <button
             key={tagName}
             className={`${
               tag === tagName
-                ? "text-white border-[#00adb5]"
-                : "text-[#adb7be] border-slate-600 hover:border-white"
-            } rounded-full border-2 px-6 py-3 text-xl cursor-pointer`}
+                ? "bg-[#00adb5] text-white"
+                : "text-gray-600 border border-gray-300 hover:bg-gray-100"
+            } rounded-full px-6 py-2 text-base font-medium transition`}
             onClick={() => setTag(tagName)}
           >
             {tagName}
           </button>
         ))}
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+
+      {/* Projects Grid */}
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 items-stretch">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
             variants={cardVarients}
             initial="initial"
             animate={isInview ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
+            transition={{ duration: 0.4, delay: index * 0.3 }}
+            className="flex"
           >
-            <div className="relative group">
-              <div
-                className="h-52 md:h-72 rounded-t-xl"
-                style={{
-                  backgroundImage: `url(${project.image})`,
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
-              ></div>
+            {/* Card */}
+            <div className="flex flex-col bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden w-full h-[370px]">
+              {/* Image + overlay */}
+              <div className="relative group h-48">
+                <div
+                  className="w-full h-full"
+                  style={{
+                    backgroundImage: `url(${project.image})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                  }}
+                ></div>
 
-              <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-opacity-0 hidden group-hover:flex group-hover:opacity-90 group-hover:bg-[#181818] transition-all duration-500">
-                <Link
-                  href={project.gitUrl}
-                  className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#adb7be] hover:border-white group/link"
-                >
-                  <CodeBracketIcon className="h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
-                </Link>
-                <Link
-                  href={project.previewUrl}
-                  className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#adb7be] hover:border-white group/link"
-                >
-                  <GlobeAltIcon className="h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
-                </Link>
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-4 transition-opacity duration-500">
+                  <Link
+                    href={project.gitUrl}
+                    className="h-12 w-12 flex items-center justify-center rounded-full border-2 border-gray-200 bg-white hover:scale-110 transition"
+                  >
+                    <CodeBracketIcon className="h-6 w-6 text-black" />
+                  </Link>
+                  <Link
+                    href={project.previewUrl}
+                    className="h-12 w-12 flex items-center justify-center rounded-full border-2 border-gray-200 bg-white hover:scale-110 transition"
+                  >
+                    <GlobeAltIcon className="h-6 w-6 text-[#00adb5]" />
+                  </Link>
+                </div>
               </div>
-            </div>
 
-            <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
-              <h5 className="text-xl font-semibold mb-2">{project.title}</h5>
-              <p className="text-[#adb7be]">{project.description}</p>
+              {/* Title + Description */}
+              <div className="flex flex-col flex-grow p-5">
+                <h5 className="text-lg font-semibold text-gray-800 mb-2">
+                  {project.title}
+                </h5>
+                <p className="text-sm text-gray-600 line-clamp-3">
+                  {project.description}
+                </p>
+              </div>
             </div>
           </motion.li>
         ))}
